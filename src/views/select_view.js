@@ -8,6 +8,7 @@ SelectView.prototype.bindEvents = function () {
   PubSub.subscribe('SolarSystem:all-planets', (event) =>{
     const allPlanets = event.detail;
     this.populate(allPlanets);
+	console.log("Benj is a hacker");
     console.log("Select View at line 11");
   });
 
